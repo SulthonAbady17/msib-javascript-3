@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 3 JS Eksternal</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="card">
+      <h1 class="card-title">FORM PEGAWAI</h1>
+      <form id="pegawai">
+        <label for="nama" class="pegawai-label">Nama</label>
+        <div class="input_pegawai">
+          <input
+            class="input"
+            type="text"
+            name="nama"
+            placeholder="Masukkan nama anda"
+          />
+        </div>
+
+        <label for="nama" class="pegawai-label">Jabatan</label>
+        <div class="dropdown">
+          <select name="jabatan"></select>
+          <div class="select-arrow"></div>
+        </div>
+
+        <label for="nama" class="pegawai-label">Status</label>
+        <div class="dropdown">
+          <select name="status"></select>
+          <div class="select-arrow"></div>
+        </div>
+
+        <button
+          type="submit"
+          name="proses"
+          class="button"
+          onclick="transaksi()"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+    <center id="validator"></center>
+  </body>
+
+  <script src="toko.js"></script>
+</html>
